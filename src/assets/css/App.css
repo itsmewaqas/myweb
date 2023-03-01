@@ -1,0 +1,450 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'LexendDeca-Regular';
+  color: #000;
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 15px 0px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  font-family: 'LexendDeca-Regular';
+  color: #000;
+  display: block;
+  text-align: left;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0px;
+  padding: 15px 0px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'LexendDeca-Regular';
+  display: block;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: left;
+}
+@font-face {
+  font-family: 'LexendDeca-Regular';
+  src: url('../fonts/LexendDeca-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LexendDeca-Light';
+  src: url('../fonts/LexendDeca-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LexendDeca-Thin';
+  src: url('../fonts/LexendDeca-Thin.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/*clearfix css*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/*clearfix css end*/
+section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+/* .content2 {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+} */
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  background-color: #18181c;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+header .logo {
+  margin: 0px;
+  padding: 0px 0px;
+  list-style: none;
+  align-self: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+header .logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+header ul {
+  margin: 0px;
+  padding: 0px 0px;
+  list-style: none;
+  align-self: center;
+  justify-content: flex-end;
+}
+header ul li {
+  margin: 0px;
+  padding: 0px 10px;
+  color: #979799;
+  font-size: 14px;
+  letter-spacing: 1px;
+  float: left;
+  list-style: none;
+  cursor: pointer;
+  font-family: 'LexendDeca-Thin';
+}
+header ul li a {
+  color: #f1f1f1;
+}
+header .socialBox {
+  align-self: center;
+  justify-content: flex-end;
+}
+header .socialBox a {
+  margin-left: 10px;
+  cursor: pointer;
+}
+header .socialBox a img {
+  width: 26px;
+  height: 27px;
+}
+.homeContant {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px 30px;
+  box-sizing: border-box;
+}
+.homeContant img {
+  margin: 15px auto;
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 3px 6px 14px #3c3c3c;
+}
+.homeContant h1 {
+  color: #f1f1f1;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'LexendDeca-Light';
+  text-align: center;
+}
+.homeContant ul {
+  list-style: none;
+  margin: 0px;
+  padding: 15px 0px;
+}
+.homeContant ul li {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  font-family: 'LexendDeca-Thin';
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.homeContant ul li a {
+  color: #f1f1f1;
+  padding: 5px 15px;
+}
+.aboutContant {
+  background-color: #fff;
+  height: 100vh;
+  padding: 160px 90px 0px;
+  box-sizing: border-box;
+}
+.aboutContant h2 {
+  color: #000;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'LexendDeca-Regular';
+  text-align: left;
+}
+.aboutContant p {
+  color: #000;
+  font-size: 24px;
+  line-height: 34px;
+  font-family: 'LexendDeca-Light';
+  text-align: left;
+}
+.portfolioContant {
+  background-color: #000;
+  height: 100vh;
+  padding: 60px 90px 0px;
+  box-sizing: border-box;
+}
+.portfolioContant h3 {
+  color: #fff;
+  font-size: 36px;
+  padding-bottom: 30px;
+  line-height: 40px;
+  font-family: 'LexendDeca-Regular';
+  text-align: left;
+}
+.portfolioContant ul{
+  list-style: none;
+  margin: 0px;
+  padding:0px;
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.portfolioContant ul li{
+  list-style: none;
+  margin: 15px 15px 0px 0px;
+  padding:0px;
+  display: inline-block;
+  width: 32%;
+}
+.portfolioContant ul li img{
+  max-width: 100%;
+}
+.skillsContant {
+  background-color: #fff;
+  height: 100vh;
+  padding: 60px 90px 0px;
+  box-sizing: border-box;
+}
+.skillsContant h4 {
+  color: #000;
+  font-size: 36px;
+  padding-bottom: 30px;
+  line-height: 40px;
+  font-family: 'LexendDeca-Regular';
+  text-align: left;
+}
+.skillsContant ul{
+  margin: 0px;
+  padding: 15px 0px;
+  list-style: none;
+}
+.skillsContant ul li{
+  margin: 0px;
+  padding: 15px 0px;
+  text-align: left;
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+}
+.skillsContant ul li span{
+  display: block;
+  color: #000;
+  padding: 10px 0px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contactContant {
+  background-color: #000;
+  height: 100vh;
+  padding: 60px 90px 0px;
+  box-sizing: border-box;
+}
+.contactContant h5 {
+  color: #fff;
+  font-size: 36px;
+  padding-bottom: 30px;
+  line-height: 40px;
+  font-family: 'LexendDeca-Regular';
+  text-align: left;
+}
+.formBox {
+  display: block;
+  max-width: 800px;
+  margin: 15px auto;
+}
+.formBox label{
+  display: block;
+  font-size: 12px;
+  padding: 5px 0px;
+  color: #fff;
+}
+.filedBox {
+  float: left;
+  width: 50%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.filedBox input[type=text] {
+  width: 100%;
+  height: 34px;
+  color: #fff;
+  border: #ccc solid 1px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.filedBox input[type=email] {
+  width: 100%;
+  height: 34px;
+  color: #fff;
+  border: #ccc solid 1px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.filedBox select {
+  width: 100%;
+  height: 34px;
+  background-color: transparent;
+  border: #ccc solid 1px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.textareaBox {
+  display: block;
+  width: 100%;
+  clear: both;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.textareaBox textarea {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  border: #ccc solid 1px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.contactContant button {
+  width: 97%;
+  display: block;
+  background-color: #18181c;
+  color: #fff;
+  border: none;
+  height: 44px;
+  border-radius: 10px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.footer {
+  flex-direction: row;
+  justify-content: right;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #18181c;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+.footer p {
+  padding: 15px 0px;
+  text-align: right;
+  color: #fff;
+}
+.error {
+  color: #f37c7c;
+  font-size: 12px;
+  display: block;
+  padding: 5px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: 0px auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, .5);
+}
+.successBox {
+  background-color: #81c784;
+  width: 400px;
+  min-height: 200px;
+  border-radius: 15px;
+  padding: 15px;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 100px;
+  z-index: 120;
+  margin: 0px auto;
+}
+.successBox p {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 15px 0px;
+}
+.successBox p strong {
+  display: block;
+  padding: 15px 0px;
+  font-size: 18px;
+}
+.close {
+  background-color: transparent;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
